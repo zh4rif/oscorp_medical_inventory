@@ -21,3 +21,23 @@ Implementation Details:
 Description Form:A form to enter and update the description of medicines.
 Display Information:A detailed view to display medicine information including description, usage, dosage, and side effects.
 Database Storage:Store and retrieve description data from the database.
+
+4. Expiry Date Notifications
+Description: This functionality alerts users when a medicine is about to expire or has expired. This ensures that expired medicines are not dispensed.
+Implementation Details:
+Expiry Date Tracking:Store expiry dates for each medicine batch.
+Notification System:Periodic checks to identify medicines nearing expiry.
+Alerts:Send notifications via email, SMS, or in-app alerts to users about upcoming or past expiry dates.
+
+5. Medicine Search
+Description:Users can search for medicines by name. This facilitates quick access to medicine information and inventory status.
+Implementation Details:
+Search Interface:A search bar where users can type in the medicine name.
+Search Algorithm:Implement a search algorithm to match medicine names and provide suggestions as users type.
+Results Display: Show a list of medicines that match the search query along with relevant details.
+
+6. Low Stock Notifications
+Description:This functionality alerts users when the stock of a medicine falls below a predefined threshold. This ensures timely reordering of medicines to avoid stockouts.
+Implementation Details:
+Stock Monitoring: Periodic checks to compare current stock levels with thresholds.
+Alerts:Send notifications via email, SMS, or in-app alerts when stock falls below the threshold.
