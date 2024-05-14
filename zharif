@@ -1,4 +1,5 @@
-3.	Functional Requirements
+Functional Requirements
+
 1.User Authentication
 Description:This functionality allows users to securely log in to the system using their staff ID and password. It ensures that only authorized personnel have access to the system.
 Implementation Details:
@@ -59,6 +60,30 @@ Order Synchronization: Ensure that orders placed through the system are reflecte
 9.Barcode Scanning
 Description:Users can use barcode scanning to upload inventory stock data. This increases the efficiency and accuracy of inventory management.
 Implementation Details:
+
+Non-Functional Requirements
+
+1. Compatibility
+Description:The software must be compatible with and installable on both Android and iOS devices, ensuring that it can be accessed and used by a wide range of users across different mobile platforms.
+Implementation Details:
+Cross-Platform Development:Utilize frameworks like React Native or Flutter to develop a single codebase that works on both Android and iOS.
+Testing:Conduct thorough testing on a variety of Android and iOS devices to ensure compatibility and performance.
+App Store Compliance:Ensure the software meets the guidelines and requirements of both the Google Play Store and Apple App Store for distribution.
+
+2. Load Handling
+Description:The software must be capable of handling up to 100 concurrent users without performance degradation, ensuring smooth operation during peak usage times.
+Implementation Details:
+Scalability:Design the system architecture to be scalable, possibly using cloud services like AWS, Azure, or Google Cloud that can dynamically allocate resources based on demand.
+Performance Testing:Use tools like JMeter or LoadRunner to simulate concurrent users and test the system's performance under load.
+Optimized Code:Write efficient code and use performance optimization techniques such as caching, database indexing, and query optimization to ensure the system runs smoothly under load.
+
+3. Security
+Description:The software must be resilient against malware and virus attacks, protecting user data and maintaining the integrity of the system.
+Implementation Details:
+Secure Coding Practices: Follow secure coding practices to prevent common vulnerabilities such as SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF).
+Regular Security Audits: Perform regular security audits and penetration testing to identify and address potential vulnerabilities.
+Antivirus Integration: Integrate antivirus and malware detection tools to scan and protect the system from malicious software.
+
 Barcode Scanner Integration:Support for barcode scanners (handheld devices or mobile apps).
 Data Parsing:Read and interpret barcode data to update inventory records.
 Inventory Update:Automatically adjust inventory levels based on scanned data, including adding new stock and verifying existing quantities.
