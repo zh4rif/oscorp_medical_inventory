@@ -41,3 +41,24 @@ Description:This functionality alerts users when the stock of a medicine falls b
 Implementation Details:
 Stock Monitoring: Periodic checks to compare current stock levels with thresholds.
 Alerts:Send notifications via email, SMS, or in-app alerts when stock falls below the threshold.
+
+7.Purchase Order Generation
+Description:Users can generate purchase orders for restocking inventory. This streamlines the process of ordering new stock from suppliers.
+Implementation Details:
+Order Form:A form to create new purchase orders, including medicine details, quantities, and supplier information.
+Auto-Fill Features:Suggest medicines that are low on stock for quick order creation.
+Order Management:Track the status of purchase orders such as pending, approved, received and generate order documents such as PDF.
+
+8. Supplier Integration
+Description:This allows real-time integration with supplier systems for inventory updates and ordering. This ensures seamless restocking and up-to-date inventory data.
+Implementation Details:
+API Integration: Connect with supplier systems using APIs to place orders and receive updates.
+Real-Time Data:Use webhooks or similar technology to receive instant updates from suppliers about order status and inventory changes.
+Order Synchronization: Ensure that orders placed through the system are reflected in both the local inventory and the supplier’s system.
+
+9.Barcode Scanning
+Description:Users can use barcode scanning to upload inventory stock data. This increases the efficiency and accuracy of inventory management.
+Implementation Details:
+Barcode Scanner Integration:Support for barcode scanners (handheld devices or mobile apps).
+Data Parsing:Read and interpret barcode data to update inventory records.
+Inventory Update:Automatically adjust inventory levels based on scanned data, including adding new stock and verifying existing quantities.
